@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      /* "*"  e o estilo universal, vai para a pagina toda  */
+      margin: 5px;
+      border: 1px;
+      padding: 0px;
+    }
+    body {
+      background-image: url("../image/fundo.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    html {
+      font-size: 62.5%;
+    }
+    header {
+      /* background-color: rgb(255, 255, 255); */
+      font-family: arial;
+      width: 99%;
+      padding: 10px;
+      padding-left: 1px;
+      text-align: left;
+      opacity: 90%;
+      border-radius: 10px 10px;
+      box-shadow: 12xp 12xp #808080;
+    }
+    /* #menu {
+      font-family: arial;
+      font-size: 1.6rem;
+      text-align: justify;
+      background-color: #87ceeb;
+      box-shadow: 8px 8px #808080;
+      color: #ffffff;
+      width: 95%;
+      padding-top: 10px;
+      padding-right: 10px;
+    } */
+
+    .info {
+      font-family: arial;
+      font-size: 1.6rem;
+      text-align: justify;
+      text-shadow: 1px 1px 1px white, -1px -1px 1px white, 1px -1px 1px white,
+        -1px 1px 1px white;
+    }
+
+    h1 {
+      font-family: arial;
+      font-size: 2.2rem;
+      color: #fff;
+      text-shadow: 2px, 2px, #ffffff;
+    }
+
+    #grid-secao {
+      margin-top: 30px;
+      background-color: #808080;
+      color: #fff;
+      text-align: center;
+      border-radius: 10px 10px;
+    }
+
+    .grid div {
+      background-color: #87ceeb;
+      font-family: arial;
+      text-align: center;
+      font-size: 1.6rem;
+      border-radius: 12px 12px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 3px;
+      text-align: center;
+    }
+
+    .img {
+      width: 50%;
+      height: 50%;
+    }
+
+    .divisao {
+      background-color: #87ceeb;
+      text-align: left;
+    }
+
+    .goodvibe {
+      background-color: #000;
+      text-align: left;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+    .historia {
+      font-family: arial;
+      font-size: 1.6rem;
+      color: #fff;
+    }
+
+    figure img {
+      width: 5%;
+      height: 5%;
+      float: left;
+      margin-right: 10px; /* coloca limite na largura da imagem, assim o texto podendo ficar na mesmo "linha" que a imagem */
+    }
+    .rodape {
+      /* background-color: rgba(128, 128, 128, 1); */
+      color: #ffffff;
+
+      font-family: arial;
+      font-size: 1.6rem;
+      text-align: center;
+
+      box-shadow: none;
+      width: 100%;
+      padding: 5px;
+    }
+    a {
+      text-decoration: none;
+      color: #000000;
+      transition: all 400ms ease-in-out;
+    }
+
+    a:hover {
+      /* da o efeito no meno de quando voce passa o mouse em cima fica um sombreado atras*/
+      background-color: #dedede;
+    }
+    #menu {
+      margin: 2px;
+      padding: 10px;
+    }
+
+    #cat {
+      border-radius: 10px 10px;
+    }
+    #newschool {
+      border-radius: 10px 10px;
+    }
+    #oldschool {
+      border-radius: 10px 10px;
+    }
+    #leather {
+      border-radius: 10px 10px;
+    }
+    #Future {
+      border-radius: 10px 10px;
+    }
+    #social {
+      border-radius: 10px 10px;
+    }
+    #p1 {
+      font-family: arial;
+      font-size: 1.6rem;
+      text-align: justify;
+
+      background-color: #87ceeb;
+      box-shadow: 8px 8px #808080;
+      color: #000000;
+
+      width: 95%;
+      padding-top: 10px;
+      padding-left: 12px;
+      padding-bottom: 10px;
+      padding-right: 10px;
+      border-radius: 10px 10px;
+    }
+    #primerio {
+      color: #000000;
+    }
+  </style>
+
+  <body>
+    <div>
+      <header id="menu">
+        <p id="p1">
+          <a href="../index.html" target="_self">[Inicio]</a>
+          <!-- colca o link pra onde vai ser direcionado, e em brando o nome do "botao" -->
+          <a href="sobre.html" target="_self">[Sobre o Jogo]</a
+          ><!-- colca o link pra onde vai ser direcionado, e em brando o nome do "botao" -->
+          <a href="report.html" target="_self">[Report Evento]</a
+          ><!-- colca o link pra onde vai ser direcionado, e em brando o nome do "botao" -->
+          <a href="formulario.html" target="_self">[Formulario]</a>
+        </p>
+      </header>
+    </div>
+    <br />
+    <h1>META DECKS</h1>
+    <section>
+      <p class="info" id="primerio">
+        Os "meta decks" em Yu-Gi-Oh! são os decks que são considerados os mais
+        fortes e competitivos em um determinado momento no jogo. Esses decks
+        costumam ser amplamente utilizados em torneios e eventos competitivos de
+        alto nível. Os meta decks mudam ao longo do tempo devido às atualizações
+        das listas de cartas banidas e limitadas, bem como o lançamento de novos
+        conjuntos de cartas que introduzem novas estratégias e arquétipos. Em
+        geral, os meta decks são construídos em torno de arquétipos específicos
+        que possuem cartas que funcionam em conjunto para criar combos poderosos
+        e eficientes. Esses decks geralmente têm uma série de cartas-chave que
+        são essenciais para sua estratégia e que permitem ao jogador executar
+        jogadas poderosas ou interromper as jogadas do oponente. Os meta decks
+        também tendem a ser flexíveis o suficiente para lidar com diferentes
+        situações e estratégias adversárias. Eles são projetados para ter um bom
+        equilíbrio entre ofensiva e defensiva, bem como possuir uma consistência
+        na execução de suas jogadas. Alguns exemplos de meta decks populares ao
+        longo dos anos incluem o "Dragon Rulers" (que se baseava na invocação de
+        monstros Pêndulo), "Zoodiac" (que se destacou pela capacidade de invocar
+        múltiplos monstros em um único turno) e "Sky Striker" (um deck focado em
+        controle de jogo e remoção de ameaças adversárias). É importante
+        destacar que o meta game está sempre mudando, conforme novas cartas são
+        lançadas e o ambiente competitivo evolui. Portanto, é essencial
+        acompanhar as atualizações e tendências atuais para estar ciente dos
+        meta decks dominantes no momento.
+      </p>
+    </section>
+
+    <section class="secao" id="grid-secao">
+      <div class="grid">
+        <div>
+          <a href="#cat"><img src="../image/cat.jpg" /></a>
+        </div>
+        <div>
+          <a href="#newschool"><img src="../image/newschool.jpg" /></a>
+        </div>
+        <div>
+          <a href="#oldschool"><img src="../image/oldschool.jpg" /></a>
+        </div>
+        <div>
+          <a href="#leather"><img src="../image/Leather.jpg" /></a>
+        </div>
+        <div>
+          <a href="#future"><img src="../image/Future.jpg" /></a>
+        </div>
+      </div>
+    </section>
+    <br />
+    <section id="cat">
+      <nav class="divisao" id="cat">
+        <a href="#menu"><img src="../image/cat.jpg" alt="CAT" /></a>
+      </nav>
+      <p class="info">
+        <b> Virtual World: </b> O Virtual World é um arquétipo introduzido em
+        2020 e ainda continua sendo uma escolha popular. Baseado em criaturas
+        mitológicas e orientais, o deck é conhecido por sua capacidade de
+        invocar monstros de forma rápida e consistente. "Mundo Virtual" tem um
+        foco em banir e invocar a mão enquanto envia cartas do baralho para o
+        cemitério. Curiosamente, todos os membros do arquétipo têm Níveis/Postos
+        consistindo de múltiplos de 3, variando do referido número ao 9. A
+        maioria dos membros do Deck Principal tem o efeito compartilhado,
+        Invocando-se a partir da mão "Se este cartão estiver em sua mão: Você
+        pode direcionar 1 cartão "Mundo Virtual" que você controla; você não
+        pode invocar monstros especiais para o resto deste turno, exceto
+        monstros de nível / rank 3 ou superior, também enviar 1 carta de "Mundo
+        Virtual" do seu baralho para o GY com um tipo de carta diferente
+        (monstro, feitiço ou armadilha) da carta alvo, e se você fizer isso,
+        invoque esta carta ..."
+      </p>
+    </section>
+
+    <section id="newschool">
+      <nav class="divisao" id="newschool">
+        <a href="#menu"
+          ><img src="../image/newschool.jpg" alt="New School"
+        /></a>
+      </nav>
+      <p class="info">
+        <b>Eldlich: </b> O deck Eldlich é baseado em um arquétipo de monstros
+        zumbis que foi lançado em 2020. Ele combina elementos de controle de
+        jogo com um foco em invocações especiais e negação de efeitos do
+        oponente. Este arquétipo é centrado em torno do monstro Eldlich, o
+        Senhor Dourado e é apoiado pelos arquétipos "Eldlixir" e "Terra
+        Dourada". O estilo de jogo do baralho gira em torno de levar Eldlich ao
+        campo o mais rápido possível, seja através de seu próprio efeito ou das
+        cartas "Eldlixer". A partir daí, o baralho usa um estilo de jogo de
+        controle e enxame para permitir que as cartas de "Eldlixer" invoquem
+        mais monstros zumbis e os Monstros de Armadilha da "Terra Dourada" façam
+        efeitos adicionais quando invocados com o Senhor Dourado no campo; como
+        destruir uma carta em campo, banir uma carta de GY, ou baixar o ATK de
+        um monstro para 0.
+      </p>
+    </section>
+
+    <section id="oldschool">
+      <nav class="divisao" id="oldschool">
+        <a href="#menu"><img src="../image/oldschool.jpg" alt="oldschool" /></a>
+      </nav>
+      <p class="info">
+        <b>Tri-Brigade:</b> Esse arquétipo foi introduzido em 2021 e tem um
+        enfoque em monstros Beast, Beast-Warrior e Winged Beast. O deck oferece
+        uma boa combinação de controle de campo e poder de ataque, permitindo
+        uma variedade de jogadas estratégicas.Seus efeitos giram em torno de
+        banir monstros e Link Summoning. "Fraktall" permite que você facilmente
+        Special Summon "Shuraig". Para fazer isso, você pode descartá-lo para
+        enviar "Kitt" do seu Deck para o GY. Como "Kitt" também pode enviar 1
+        cartão "Tri-Brigade" para o GY, você pode enviar "Nervall" para o GY
+        para usar seu efeito para adicionar "Kerass" à sua mão. Invoque "Kerass"
+        e use seu primeiro efeito para banir "Fraktall", "Kitt" e "Nervall" de
+        seu cemitério para invocar "Rugal". Em seguida, use-o e "Kerass" para
+        vincular Summon "Shuraig". Devido à importância de "Fraktall", é
+        necessário executar "Formação de Fogo - Tenki" para procurá-lo.
+      </p>
+    </section>
+
+    <section id="leather">
+      <nav class="divisao" id="leather">
+        <a href="#menu"><img src="../image/Leather.jpg" alt="Leather" /></a>
+      </nav>
+      <p class="info">
+        <b>Drytron:</b> O Drytron é um arquétipo de monstros Machine que foi
+        lançado em 2021. Ele se concentra na invocação de monstros de alto nível
+        rapidamente, além de ter acesso a poderosas cartas de suporte. O deck é
+        focado em torno de ritual invocando monstros de mão ou cemitério
+        homenageando monstros de máquinas leves de sua mão ou campo cujo valor
+        de ataque é igual ou superior ao valor de ataque de monstros rituais. É
+        o primeiro arquétipo a utilizar essa nova mecânica de invocação ritual,
+        todas as outras exigindo níveis e não valor de ataque. Todos os monstros
+        Drytron de Nível 1 têm 2000 ATK e 0 DEF, bem como os seguintes efeitos:
+        "Não pode ser Normal Convocado/Definido. Deve ser Convocado Especial com
+        o efeito de um cartão "Drytron". Você pode Tributar 1 outro monstro
+        "Drytron", ou 1 Monstro Ritual, de sua mão ou campo; Invoque esta carta
+        especial de sua mão ou GY em Posição de Defesa, então você pode . . .
+        Você não pode invocar monstros especiais, exceto monstros que não podem
+        ser invocados normais / Set, o turno você ativa este efeito. Você só
+        pode usar esse efeito de "[este cartão]" uma vez por turno."
+      </p>
+    </section>
+
+    <section id="future">
+      <nav class="divisao" id="Future">
+        <a href="#menu"><img src="../image/Future.jpg" alt="Future" /></a>
+      </nav>
+      <p class="info">
+        <b>Live Twin:</b> Esse arquétipo de monstros Fairy foi lançado em 2020 e
+        é conhecido por sua capacidade de controlar o campo de jogo e
+        interromper as jogadas do oponente. Ele se destaca por suas habilidades
+        de negação de efeitos e possui um estilo de jogo único.
+      </p>
+    </section>
+
+    <div>
+      <footer>
+        <figure class="goodvibe">
+          <img src="../vidoes/videoweb1.gif" />
+          <p class="rodape">Contato:</p>
+          <p class="rodape">Fone: 60 6070-6070</p>
+          <p class="rodape">dev@gmail.com</p>
+        </figure>
+      </footer>
+    </div>
+  </body>
+</html>

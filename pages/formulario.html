@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0"
+    />
+    <title>Document</title>
+    <style type="text/css">
+      * {
+        border: 0px;
+        padding: 0px;
+      }
+      body {
+        background-image: url("../image/fundo.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      html {
+        font-size: 62.5%;
+      }
+
+      .info {
+        padding-top: 0px;
+        font-family: arial;
+        font-size: 1.6rem;
+        text-align: justify;
+        border-radius: 10px 10px;
+      }
+      header {
+        /* background-color: rgba(128, 128, 128, 1); */
+        box-shadow: 8xp 8xp #808080;
+        color: #ffffff;
+        font-family: arial;
+        width: 80%;
+        padding: 10px;
+        padding-left: 1px;
+        text-align: right;
+        margin-left: 1px;
+
+        /*  position: fixed;  deixa o cabecario de cima fixo, fica seguindo a pagina */
+        opacity: 90%; /* */
+      }
+      #menu {
+        font-family: arial;
+        font-size: 1.6rem;
+        text-align: justify;
+        background-color: #87ceeb;
+        box-shadow: 8px 8px #808080;
+        color: #ffffff;
+        width: 98%;
+
+        padding-top: 1px;
+        padding-bottom: 1px;
+        padding-left: 5px;
+
+        border-radius: 10px 10px;
+      }
+      h1 {
+        font-size: 2rem;
+        font-family: arial;
+        padding-bottom: 0px;
+      }
+
+      h2 {
+        font-family: arial;
+        font-size: 1.8rem;
+        padding-bottom: 0px;
+      }
+
+      .secao {
+        background-color: #87ceeb;
+        box-shadow: 10px 10px #808080;
+        padding: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 10px 10px;
+      }
+
+      .secao form {
+        /* formatar apenas o form que esta dentro da secao*/
+        font-family: arial;
+        font-size: 1.6rem;
+        padding-left: 0px;
+      }
+      nav {
+        text-align: right;
+        font-weight: bold;
+        font-family: arial;
+        font-size: 1.6rem;
+        margin-right: 2%;
+        word-spacing: 10px;
+        margin-top: 10px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #000000;
+        transition: all 400ms ease-in-out;
+      }
+
+      a:hover {
+        /* da o efeito no meno de quando voce passa o mouse em cima fica um sombreado atras*/
+        background-color: #dedede;
+      }
+      .img {
+        width: 50%;
+        height: 50%;
+      }
+      .goodvibe {
+        background-color: #000;
+        text-align: left;
+        margin-left: 10px;
+        margin-right: 0px;
+      }
+
+      figure img {
+        width: 5%;
+        height: 5%;
+        float: left;
+        margin-right: 10px; /* coloca limite na largura da imagem, assim o texto podendo ficar na mesmo "linha" que a imagem */
+      }
+      .rodape {
+        color: #ffffff;
+        font-family: arial;
+        text-align: center;
+        font-size: 1.4rem;
+
+        flex-direction: column;
+
+        align-items: center;
+        min-height: 0.5vh;
+
+        box-shadow: none;
+        width: 100%;
+        padding: 0px;
+      }
+      #menu1 {
+        /* padding: 1px; */
+        width: 100%;
+        padding: 8px;
+        padding-left: 5px;
+      }
+      #div1 {
+        /* serve para editar apenas um paragrafo em especifico sem apetar os outros, pode criar um para cada paragrafo, mas nesse caso estou usou esse para todos */
+        border-radius: 10px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <br />
+    <div id="menu1">
+      <header id="menu">
+        <p id="div1">
+          <a href="../index.html" target="_self">[Inicio]</a>
+          <a href="sobre.html" target="_self">[Sobre o Jogo]</a>
+          <!-- colca o link pra onde vai ser direcionado, e em brando o nome do "botao" -->
+          <a href="report.html" target="_self">[Report Evento]</a
+          ><!-- colca o link pra onde vai ser direcionado, e em brando o nome do "botao" -->
+          <a href="meta.html" target="_self">[Meta Decks]</a
+          ><!-- colca o link pra onde vai ser direcionado, e em brando o nome do "botao" -->
+        </p>
+      </header>
+    </div>
+    <br /><br />
+    <section class="secao">
+      <h1>Formulario de inscrição para os eventos</h1>
+
+      <p class="info" id="div1">
+        Ao preencher este formulário, concordo em cumprir todas as regras e
+        regulamentos estabelecidos pela organização do torneio. Entendo que meu
+        deck será sujeito a análise e verificação durante o evento. Declaro que
+        as informações fornecidas são verdadeiras e precisas.
+      </p>
+    </section>
+    <br />
+    <br />
+    <section class="secao" id="form">
+      <h2>dados cliente</h2>
+      <!-- TYPE="TEXT" A BAIXO -->
+      <form action="#" method="get" target="_blank">
+        <p class="form" id="div1">
+          <label for="matricula">ID Konami:</label><br />
+          <input
+            type="text"
+            id="matricula"
+            name="matricula"
+            placeholder="konami ID"
+            size="18"
+          />
+          <!-- o type="text" e responsavel por criar a cainha de texto e o size="18" e o tamanho da caixa-->
+        </p>
+
+        <p class="form" id="div1">
+          <label for="nome">Nome:</label><br />
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="digite seu nome"
+            size="18"
+          />
+        </p>
+
+        <p class="form" id="div1">
+          <label for="fone">e-mail:</label><br />
+          <input
+            type="text"
+            id="fone"
+            name="fone"
+            placeholder="digite seu email"
+            size="18"
+          />
+        </p>
+
+        <!-- CHECKBOX A BAIXO -->
+        <form action="#" method="get" target="_blank">
+          <p id="div1">
+            <input type="checkbox" id="uml" name="curso" value="UML" />
+            <!-- o type="checkbox"  e responsavel por criar a caianha para marcar o V -->
+            <label for="uml">Formato Avançado</label><br />
+
+            <input type="checkbox" id="testes" name="curso" value="TESTE" />
+            <label for="testes">Formato Tradicional</label><br />
+
+            <input type="checkbox" id="devops" name="curso" value="DEVOPS" />
+            <label for="devops">Formato Speed Duel</label>
+          </p>
+        </form>
+
+        <form action="#" method="get" target="_blank">
+          <p id="div1">
+            <input type="reset" value="cancelar" title="limpar dados" />
+            <input type="reset" value="cofirmar" title="enviar dados" />
+          </p>
+        </form>
+      </form>
+    </section>
+    <br />
+    <div>
+      <footer>
+        <figure class="goodvibe">
+          <img src="../vidoes/videoweb1.gif" />
+          <p class="rodape">Contato:</p>
+          <p class="rodape">Fone: 60 6070-6070</p>
+          <p class="rodape">dev@gmail.com</p>
+        </figure>
+      </footer>
+    </div>
+  </body>
+</html>
